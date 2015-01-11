@@ -14,7 +14,7 @@ datetime <- paste(as.Date(data$Date), data$Time)
 data$datetime <- as.POSIXct(datetime)
 
 ## Plotting: Plot2.
-plot(data$Global_active_power~data$Datetime, type="l",
+plot(data$Global_active_power~data$datetime, type="l",
      xlab="", ylab="Global Active Power (kilowatts)")
 
 ## Saving the plot to a .png file.
